@@ -1,0 +1,103 @@
+<div class="row">
+  <div [ngClass]="sidePanelVisible ? 'col-8' : 'col-12'">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <div class="row">
+          <div class="col-6">Product List</div>
+          <div class="col-6 text-end">
+            <button class="btn btn-sm btn-success" (click)="openSidePanel()">New</button>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 col-xl-4" *ngFor="let product of productList">
+            <div class="p-4 rounded bg-light">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <img [src]="product.imageUrl" class="img-fluid rounded-circle w-100" alt="">
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="h5">{{product.shortName}}</a>
+                        <P><b>{{product.categoryName}}</b></P>
+                        <div class="d-flex my-3">
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star text-primary"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4 class="mb-3">{{product.price}}Rs</h4>
+                         <button class="btn btn-primary" (click)="onEdit(product)">Edit</button>
+                         <button class="btn btn-danger"(click)="onDelete(product.id)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  <div class="col-4" *ngIf="sidePanelVisible">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <div class="row">
+          <div class="col-6">New Product</div>
+          <div class="col-6 text-end">
+            <button class="btn btn-sm btn-success" (click)="closeSidePanel()">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+            <label for="sku">SKU</label>
+            <input type="text" [(ngModel)]="productObj.sku" class="form-control" id="sku">
+          </div>
+          <div class="col-6">
+            <label for="name">Name</label>
+            <input type="text" [(ngModel)]="productObj.name" class="form-control" id="name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="price">Price</label>
+            <input type="number" [(ngModel)]="productObj.price" class="form-control" id="price">
+          </div>
+          <div class="col-6">
+            <label for="categoryId">Category</label>
+            <select [(ngModel)]="productObj.categoryId" (change)="onCategoryChange($event)" class="form-control" id="categoryId">
+              <option *ngFor="let cat of categoryList" [value]="cat.categoryId">{{cat.categoryName}}</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="deliveryTimeSpan">Delivery Time Span</label>
+            <input type="text" [(ngModel)]="productObj.deliveryTimeSpan" class="form-control" id="deliveryTimeSpan">
+          </div>
+          <div class="col-6">
+            <label for="shortName">Product Short Name</label>
+            <input type="text" [(ngModel)]="productObj.shortName" class="form-control" id="shortName">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <label for="imageUrl">Image URL</label>
+            <input type="text" [(ngModel)]="productObj.imageUrl" class="form-control" id="imageUrl">
+          </div>
+          <div class="col-6">
+            <label for="description">Product Description</label>
+            <input type="text"[(ngModel)]="productObj.description" class="form-control" id="description">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-6">
+            <button class="btn btn-secondary" (click)="resetForm()">Reset</button>
+          </div>
+          <div class="col-6 text-end">
+          <button class="btn btn-success" (click)="onSave()">Save Product</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

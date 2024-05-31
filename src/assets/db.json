@@ -1,0 +1,56 @@
+{
+  "products": [
+    {
+      "id": "f7ca",
+      "sku": "Britannia Good Day Chocochip Cookies, 400 g",
+      "name": "Britannia Good Day Chocochip Cookies, 400 g",
+      "price": 50,
+      "shortName": "Britannia Good Day Chocochip Cookies",
+      "description": "ies loaded with melt in your mouth chocolate chips. These cookies offer a delicious chocolate experience that is sure to satisfy any chocolate craving.",
+      "categoryName": "Snacks & Branded Foods",
+      "CreatedDate": "2024-05-24T12:32:10.238Z",
+      "deliveryTimeSpan": "3 days",
+      "categoryId": "59",
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/40197805_8-britannia-good-day-chocochip-cookies.jpg"
+    },
+    {
+      "id": "48d5",
+      "sku": "Fresho Carrot - Orange (Loose), 1 kg",
+      "name": "Fresho Carrot - Orange (Loose), 1 kg",
+      "price": 120,
+      "shortName": "Fresho Carrot - Orange (Loose), 1 kg",
+      "description": "",
+      "categoryName": "Fruits & Vegetables",
+      "CreatedDate": "2024-05-27T13:24:43.679Z",
+      "deliveryTimeSpan": "3 days",
+      "categoryId": "55",
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/10000070_15-fresho-carrot-orange.jpg"
+    },
+    {
+      "id": "e7be",
+      "sku": "Maaza Mango Fruit Drink, 2 x 1.75 L (Multipack)",
+      "name": "Maaza Mango Fruit Drink, 2 x 1.75 L (Multipack)",
+      "price": 70,
+      "shortName": "Maaza Mango Fruit Drink, 2 x 1.75 L (Multipack)",
+      "description": "",
+      "categoryName": "Beverages",
+      "CreatedDate": "2024-05-27T13:30:35.929Z",
+      "deliveryTimeSpan": "",
+      "categoryId": "58",
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/1223262_1-maaza-mango-fruit-drink.jpg"
+    },
+    {
+      "id": "0069",
+      "sku": "fresho! Grapes - Green, Residue Free, 500 g",
+      "name": "fresho! Grapes - Green, Residue Free, 500 g",
+      "price": 100,
+      "shortName": "fresho! Grapes - Green, Residue Free, 500 g",
+      "description": "",
+      "categoryName": "Exotic Fruits & Veggies",
+      "CreatedDate": "2024-05-30T08:39:47.805Z",
+      "deliveryTimeSpan": "3",
+      "categoryId": "63",
+      "imageUrl": "https://www.bigbasket.com/media/uploads/p/l/40122445_4-fresho-grapes-green-residue-free.jpg"
+    }
+  ]
+}
